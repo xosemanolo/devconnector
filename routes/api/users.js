@@ -72,6 +72,7 @@ router.post(
         },
         (err, token) => {
           if (err) throw err;
+          console.log('token on its way');
           res.json({ token });
         }
       );
